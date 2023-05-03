@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <div class="nav-title">I can haz meme?</div>
+            <div class="nav-icon"></div>
+        </header>
+
+        <div class="g-title">Your Collection</div>
+
+        <div id="gallery">
+            
+        </div>
+
+        <div id="add">+</div>
+
+        <div id="modal" class="hidden">
+            <div class="modal-content">
+                <div id="preview">
+                    <div class="card hero">
+                        <div id="prev-top-text" class="card-top-text"></div>
+                        <img id="prevImg" src="https://i.imgflip.com/18d84i.jpg" >
+                        <div id="prev-bottom-text" class="card-bottom-text"></div>
+                    </div>
+                </div>
+    
+                <form action="#" id="form">
+                    <h1>Create your meme</h1>
+
+                    <div class="mb">
+                        <input type="text" class="modalInput" id="formlink" placeholder="Image link..." required>
+                        <div class="error-msg"></div>
+                    </div>
+                    
+                    <div class="mb">
+                        <input type="text" class="modalInput prevText" id="topText" placeholder="Top text..." required>
+                    </div>
+                    
+                    <div class="mb">
+                        <input type="text" class="modalInput prevText" id="bottomText" placeholder="Bottom text..." required>
+                    </div>
+
+                    <input type="submit" value="Create" class="modalbtn sub">
+                    <span class="modalbtn cncl">Cancel</span>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
